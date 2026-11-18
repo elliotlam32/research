@@ -1,0 +1,17 @@
+project:
+  type: book
+
+book:
+  title: "Research"
+  chapters:
+    - index.qmd
+    - Research.qmd
+
+format:
+  html:
+    theme:
+      cosmo
+      brand
+
+
+

@@ -1,0 +1,62 @@
+---
+title: "Missing Data Research and Analysis"
+author: "Elliot Lam"
+---
+
+
+## 1) Types of Missingness
+
+In order to understand the specific types of missingness, we must first define some key terms. 
+
+$$ \text{Complete Data: } \text{Y = } (\text{Y}_{ij})$$
+$$ \text{Missing Data Indicator: } \text{M = } (\text{M}_{ij})$$
+
+For a specific scenario or dataset, we can think of Y, or the complete data set for that scenario as
+
+$$\text{Y}_i = f(Y \mid \theta)$$
+
+Where Y represents the complete dataset for the complete population, and theta contains all the parameters for that specific population.
+
+From these definitions, we can describe the missing data mechanism as the probability of the exact type missingness, conditioned on our observed dataset, giving us this equation:
+
+$$f(M \mid Y, \phi)$$
+
+In this equation phi represents the - the paramters of what
+
+**a) Missing Completely at Random - MCAR**
+
+$$f(M \mid Y, \phi) = f(M \mid \phi)$$
+
+In this case, M is independent of Y, but may or may not independent of phi(this is unknown). In this case, phi represents the unknown paramters, or the population parameters we're trying to estimate given we had complete data. 
+- could include a missingness paramter within phi
+
+does the phi symbol include all of the parameters, or just the missingness parameter? - can be either, as the parameters are independent of each other. - 
+
+How can we create this type of missingness
+
+in the case of randomness generation model, the theta of exp1 is 0 theta of exp2 is - and the theta of the response is 0.15. The theta represents all of the population parameters, if we were to think of it as a regression model, the theta would contain the parameters of that regression model along with the 
+
+Missing - MCAR
+
+In this case, 
+
+Input Equation here.
+
+so i 
+explain the equation/essentially rule for mcar
+
+Note that missing at random, doesn't mean that each data point has the equal chance of being 'missing', but rather than the missingness has no pattern within the underlying data.
+
+read this article https://dl.acm.org/doi/10.1145/3408318
+
+learn about expectation maximization algorithm, and maybe gmm models
+
+
+things to do 
+complete case - est beta params, find residuals, get dist of residuals
+
+- for mcar case, is the one on the page
+- bias for complete case
+- push 
+- add math and equations for the data generation model in the notebook, use latex for format
+
